@@ -5,61 +5,97 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AJICEK GAMES</title>
+
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background: #10121a;
+  background: #090a0e;
   color: white;
   font-family: Arial, sans-serif;
 }
+
 header {
-  padding: 24px 8%;
-  background: #171b27;
+  background: #14151c;
+  padding: 22px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid #a51e2b;
 }
-header h1 { color: #ff4242; }
+
+header h1 {
+  color: #ff3548;
+  letter-spacing: 2px;
+}
+
 nav a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
 }
+
 .hero {
   text-align: center;
-  padding: 90px 20px;
-  background: linear-gradient(135deg,#252b40,#10121a);
+  padding: 100px 20px;
+  background: radial-gradient(#351017, #090a0e 70%);
 }
-.hero h2 { font-size: 48px; }
-.hero p { color: #bbb; }
+
+.hero h2 {
+  font-size: 48px;
+  color: #ff3548;
+}
+
+.hero p {
+  color: #bbb;
+  font-size: 18px;
+}
+
 .games {
-  max-width: 850px;
-  margin: 50px auto;
+  max-width: 900px;
+  margin: 60px auto;
   padding: 20px;
 }
+
 .game {
-  background: #202535;
+  background: #191b25;
+  border: 1px solid #343642;
+  border-radius: 14px;
   padding: 30px;
-  border-radius: 15px;
 }
-.game h3 { font-size: 27px; }
+
+.game h3 {
+  font-size: 28px;
+  color: #ff3548;
+}
+
 .button {
   display: inline-block;
-  background: #e63946;
+  background: #c52235;
   color: white;
-  padding: 14px 20px;
-  border-radius: 8px;
+  padding: 14px 22px;
+  border-radius: 7px;
   text-decoration: none;
-  margin: 8px 5px 0 0;
+  margin: 10px 8px 0 0;
+  font-weight: bold;
 }
+
+.button:hover {
+  background: #f13b4e;
+}
+
 footer {
   text-align: center;
   padding: 30px;
-  color: #888;
+  color: #777;
+  border-top: 1px solid #292a32;
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -73,15 +109,20 @@ footer {
 <section class="hero" id="home">
   <h2>YOUR NEXT NIGHTMARE.</h2>
   <p>Welcome to AJICEK GAMES.</p>
+  <p>Independent games. Unforgettable nightmares.</p>
 </section>
 
 <section class="games" id="games">
   <div class="game">
     <h3>ESCAPE AJICEK AT 3AM</h3>
     <p>A horror game made with Godot.</p>
-    <p>Available for Windows and Android.</p>
-    <a class="button" href="AjicekGame-Windows.zip">WINDOWS DOWNLOAD</a>
-    <a class="button" href="AjicekGame.apk">ANDROID DOWNLOAD</a>
+    <p>Find 10 batteries and escape. Can you survive?</p>
+
+    <a class="button"
+    href="https://github.com/aaaaaahehdbd/aaaaaahehdbd.github.io/releases/latest/download/AjicekGame-Windows.zip">
+    WINDOWS DOWNLOAD
+    </a>
+
   </div>
 </section>
 
